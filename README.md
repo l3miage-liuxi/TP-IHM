@@ -1,11 +1,11 @@
 # TP-IHM
 
 
-##▶️ Lancement des tests (Commandes)
+## ▶️ Lancement des tests (Commandes)
 
 npx playwright test
 
-##📂 Structure du Projet
+## 📂 Structure du Projet
 
 tests/todo-page-test.ts : Page Object. Encapsule les sélecteurs et les actions. Chaque méthode retourne Promise<this> pour permettre le chaînage (Fluent Interface).
 
@@ -13,7 +13,7 @@ tests/testx.spec.ts : Scénarios de test. Contient les cas de tests organisés p
 
 playwright.config.ts : Configuration globale de Playwright.
 
-##🤖 Prompts Utilisés (Documentation IA)
+## 🤖 Prompts Utilisés (Documentation IA)
 
 Ce projet a été généré à l'aide d'une approche itérative avec une IA générative. Voici les prompts clés utilisés pour produire le code final :
 
@@ -50,11 +50,11 @@ Prompt 4 : Scénarios de Filtres Dynamiques
 "Génère un test pour vérifier la réactivité des filtres (Actifs/Complétés).
 Scénario : Dans l'onglet 'Actifs', cocher une tâche et vérifier qu'elle disparaît immédiatement. Dans l'onglet 'Complétés', décocher une tâche et vérifier qu'elle disparaît immédiatement."
 
-##📊 Résultats & Analyse
+## 📊 Résultats & Analyse
 
 Suite à l'exécution de la campagne de tests, voici le bilan de la qualité logicielle :
 
-###✅ Fonctionnalités Validées
+### ✅ Fonctionnalités Validées
 
 L'ensemble des fonctionnalités "Happy Path" fonctionnent correctement :
 
@@ -64,7 +64,7 @@ Le basculement entre Tous, Actifs et Complétés met à jour la vue correctement
 
 Les fonctions Annuler et Refaire (Undo/Redo) restaurent bien les états précédents.
 
-###⚠️ Anomalie Détectée (Bug)
+### ⚠️ Anomalie Détectée (Bug)
 
 Lors du test des Valeurs Limites (Scénario 3), un comportement inattendu a été identifié :
 
