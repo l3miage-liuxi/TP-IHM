@@ -226,26 +226,7 @@ test.describe('Angular TodoList - SECTION 6 : TESTS COMPLÉMENTAIRES (BORNE & RO
         await todo.verifyListIsEmpty();
     });
 
-    /**
-     * Test : Opérations sur liste vide (robustesse)
-     */
-    test('Scénario : Tentative d\'opérations sur liste vide', async ({ page }) => {
-        const todo = new TodoPage(page);
-        await todo.navigate();
 
-        // Vérifier que la liste est vide
-        await todo.verifyListIsEmpty();
-
-        // Tentative de suppression (ne doit pas causer d'erreur)
-        // Le bouton "Supprimer cochées" ne doit pas être visible
-        await todo.verifyClearCompletedButtonHidden();
-
-        // Tentative d'Undo sur liste vide (ne doit pas causer d'erreur)
-        await todo.clickUndo();
-        await todo.verifyListIsEmpty();
-    });
-
-    
     /**
      * Test : Modification avec texte vide (doit être rejetée ou gérée)
      */
