@@ -1,0 +1,36 @@
+## 🤖 Prompts Utilisés (Documentation IA)
+
+Ce projet a été généré à l'aide d'une approche itérative avec une IA générative. Voici les prompts clés utilisés pour produire le code final :
+
+Prompt 1 : Architecture & Initialisation
+
+"Agis en tant qu'expert QA. Génère une suite de tests Playwright (TypeScript) pour l'application TodoList Angular, en utilisant le Page Object Model (POM).
+Contraintes :
+
+Approche Boîte Noire (Sélecteurs visibles utilisateur + Oracle JSON).
+
+Architecture Fluide (Chaque action retourne this).
+
+Couverture : Cycle de vie nominal, Filtres, Undo/Redo."
+
+Prompt 2 : Gestion de la zone "Étape 2"
+
+"Ajoute des méthodes dans le Page Object pour gérer la zone spécifique 'Étape 2' en bas de page.
+Défi : Les tâches sont dans des <input> (valeur) et non des labels (texte).
+Solution demandée : Utilise des sélecteurs robustes comme input[value='...'] pour modifier le texte, cocher la case associée, et supprimer via le bouton 'X'."
+
+Prompt 3 : Suppression au survol (Hover)
+
+"Le bouton de suppression 'x' dans la liste principale n'est visible qu'au survol de la souris.
+Implémente une méthode deleteViaSmallX(taskName) qui :
+
+Trouve la ligne de la tâche.
+
+Simule un .hover() sur la ligne.
+
+Clique sur le bouton .destroy qui apparaît."
+
+Prompt 4 : Scénarios de Filtres Dynamiques
+
+"Génère un test pour vérifier la réactivité des filtres (Actifs/Complétés).
+Scénario : Dans l'onglet 'Actifs', cocher une tâche et vérifier qu'elle disparaît immédiatement. Dans l'onglet 'Complétés', décocher une tâche et vérifier qu'elle disparaît immédiatement."
